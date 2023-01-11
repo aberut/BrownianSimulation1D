@@ -1,5 +1,5 @@
 # BrownianSimulation1D
-[![CC BY 4.0][cc-by-shield]][cc-by]
+[![DOI](https://zenodo.org/badge/587817112.svg)](https://zenodo.org/badge/latestdoi/587817112) [![CC BY 4.0][cc-by-shield]][cc-by]
 
 A Python code that generates trajectories of Brownian particles, by integrating the overdamped [Langevin equation](https://en.wikipedia.org/wiki/Langevin_equation), following [Heun's method](https://en.wikipedia.org/wiki/Heun%27s_method).
 
@@ -30,7 +30,7 @@ The complete code is provided as a [Jupyter Notebook](./arXiv-2212.06825.ipynb).
 
 # Citation
 
-If you would like to use this code in other scientific articles, please cite this repository as:
+If you would like to use this code in a scientific work, please cite this repository as:
 
 # License 
 
