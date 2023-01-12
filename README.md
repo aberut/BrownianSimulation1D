@@ -26,11 +26,11 @@ Both functions have a detailed help, available by typing:
 help(Brownian_simu)
 ```
 
-# Example of use
+# Tutorial
 
-A step-by-step exmaple is provided as a [Jupyter Notebook](./Examples.ipynb).
+A step-by-step example is provided as a [Jupyter Notebook](./Examples.ipynb).
 
-This examples shows how:
+This example shows how to:
 
 1. Compute the trajectories of free particles
 
@@ -38,13 +38,13 @@ This examples shows how:
 
 3. Compute the trajectories of particles submitted to a sinusoidal forcing
 
-4. Compute the trajectories of particles submitted to a colord noise
+4. Compute the trajectories of particles held in an optical trap and submitted to a colored noise
 
-This example can be opened with [Binder](https://mybinder.org/) to be interacted with directly in your internet browser: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aberut/BrownianSimulation1D/HEAD?labpath=Examples.ipynb)
+*Note* : you can open this example with [Binder](https://mybinder.org/) to directly run it and interact with it in your internet browser: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aberut/BrownianSimulation1D/HEAD?labpath=Examples.ipynb)
 
 # Example of use in scientific articles
 
-These functions were used to compute the numerical results presented in the article "Comment on "Harvesting information to control non-equilibrium states of active matter", [arXiv:2212.06825](https://arxiv.org/abs/2212.06825)
+These functions were used to compute the numerical results presented in the article Comment on "Harvesting information to control non-equilibrium states of active matter", [arXiv:2212.06825](https://arxiv.org/abs/2212.06825)
 
 The complete code is provided as a [Jupyter Notebook](./arXiv-2212.06825.ipynb).
 
@@ -52,7 +52,7 @@ The complete code is provided as a [Jupyter Notebook](./arXiv-2212.06825.ipynb).
 
 If you would like to use this code in a scientific work, please cite as:  
 
-> Antoine Bérut. aberut/BrownianSimulation1D: arXiv:2212.06825. (2023) [doi:10.5281/zenodo.7526270](https://doi.org/10.5281/zenodo.7526270)
+> Antoine Bérut. aberut/BrownianSimulation1D: v1.5. (2023) [doi:10.5281/zenodo.7526270](https://doi.org/10.5281/zenodo.7526270)
 
 # License
 
