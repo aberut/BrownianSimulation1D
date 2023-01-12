@@ -52,7 +52,7 @@ The complete code is provided as a [Jupyter Notebook](./arXiv-2212.06825.ipynb).
 
 If you would like to use this code in a scientific work, please cite as:  
 
-> Antoine Bérut. aberut/BrownianSimulation1D: v1.5. (2023) [doi:10.5281/zenodo.7526270](https://doi.org/10.5281/zenodo.7526270)
+> Antoine Bérut. aberut/BrownianSimulation1D: v1.5. (2023) [doi:10.5281/zenodo.7526269](https://doi.org/10.5281/zenodo.7526269)
 
 # License
 
