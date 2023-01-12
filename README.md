@@ -1,4 +1,5 @@
 # BrownianSimulation1D
+
 [![DOI](https://zenodo.org/badge/587817112.svg)](https://zenodo.org/badge/latestdoi/587817112) [![CC BY 4.0][cc-by-shield]][cc-by]
 
 A Python code that generates trajectories of Brownian particles, by integrating the overdamped [Langevin equation](https://en.wikipedia.org/wiki/Langevin_equation), following [Heun's method](https://en.wikipedia.org/wiki/Heun%27s_method).
@@ -14,13 +15,32 @@ where, $\gamma$ is the Stokes friciton term (given by $\gamma= 6 \pi R \mu$ with
 The script also contains a function, called **colored_noise_simu** that also integrates an overdamped Langevin equation to generate exponentially correlated Gaussian noises, with a given variance $\alpha$ and correlation time $\tau_c$.
 
 To use a functions, simply download the script in your working directory, then import in your Python scripts with:
+
 ```python
 from Numerical_Simulations_Langevin_Equation import Brownian_simu
 ```
+
 Both functions have a detailed help, available by typing:
+
 ```python
 help(Brownian_simu)
 ```
+
+# Example of use
+
+A step-by-step exmaple is provided as a [Jupyter Notebook](./Examples.ipynb).
+
+This examples shows how:
+
+1. Compute the trajectories of free particles
+
+2. Compute the trajectories of particles held in an optical trap
+
+3. Compute the trajectories of particles submitted to a sinusoidal forcing
+
+4. Compute the trajectories of particles submitted to a colord noise
+
+This example can be opened with [Binder](https://mybinder.org/) to be interacted with directly in your internet browser: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aberut/BrownianSimulation1D/HEAD?labpath=Examples.ipynb)
 
 # Example of use in scientific articles
 
@@ -31,9 +51,10 @@ The complete code is provided as a [Jupyter Notebook](./arXiv-2212.06825.ipynb).
 # Citation
 
 If you would like to use this code in a scientific work, please cite as:  
+
 > Antoine Bérut. aberut/BrownianSimulation1D: arXiv:2212.06825. (2023) [doi:10.5281/zenodo.7526270](https://doi.org/10.5281/zenodo.7526270)
 
-# License 
+# License
 
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].

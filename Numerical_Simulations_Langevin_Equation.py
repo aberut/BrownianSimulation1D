@@ -106,11 +106,17 @@ def Brownian_simu(nb_part=100,duration=1,dt=1e-5,x_0=[],r=1.5e-6,eta=1e-3,k_B=1.
     thermal_noise=np.sqrt(2*gamma*k_B*T/dt)*np.random.randn(nb_part,nb_time_increment)
     if np.size(ext_noise)==0:
         colored_noise=np.zeros_like(thermal_noise)
+    elif np.ndim(ext_noise)==1:
+        if np.size(ext_noise)==nb_part*nb_time_increment:
+            colored_noise=np.reshape(ext_noise,(1,int(nb_part)*int(nb_time_increment)))
+        else:
+            print('Error: external noise has inconsistent dimension with number of particles and time duration.')
+            return None, None
     elif np.shape(ext_noise)==(nb_part,nb_time_increment):
         colored_noise=ext_noise
     else:
-        print('External noise has inconsistent dimension with number of particles and time duration.')
-        return
+        print('Error: xternal noise has inconsistent dimension with number of particles and time duration.')
+        return None, None
     
     #Position
     x_pos=np.zeros((nb_part,nb_time_increment))
