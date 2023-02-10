@@ -5,10 +5,10 @@
 A Python code that generates trajectories of Brownian particles, by integrating the overdamped [Langevin equation](https://en.wikipedia.org/wiki/Langevin_equation), following [Heun's method](https://en.wikipedia.org/wiki/Heun%27s_method).
 
 The main function, called **Brownian_simu**, is available in the script [Numerical_Simulations_Langevin_Equation](./Numerical_Simulations_Langevin_Equation.py).  
-It can be used to simulate 1D trajectories (position as a function of time), of a Brownian particle that is submitted to a deterministic external force $F_{ext}$ and a random external noise $\eta_{ext}$, in addition to the Gaussian white noise corresponding to the equilibrium thermal agitation $\xi$.  
+It can be used to simulate 1D trajectories (position $x$ as a function of time $t$), of a Brownian particle that is submitted to an external force $F(x,t)$, in addition to the Gaussian white noise corresponding to the equilibrium thermal agitation $\xi$.  
 The simulations is done by integrating the following overdamped Langevin equation:
 
-$\gamma \frac{\mathrm{d}x}{\mathrm{d}t} = F_{ext}(x) + \eta_{ext}(t) + \xi(t)$
+$\gamma \frac{\mathrm{d}x}{\mathrm{d}t} = F_{ext}(x,t) + \xi(t)$
 
 where, $\gamma$ is the Stokes friciton term (given by $\gamma= 6 \pi R \mu$ with $R$ the particle's radius, and $\mu$ the fluid's viscosity), and $\xi$ is a Gaussian white noise which verifies $\langle \xi(t) \rangle$ = 0 and $\langle \xi(t) \xi(t') \rangle = 2\gamma k_\mathrm{B}T$ $\delta(t-t')$ (with $k_\mathrm{B}$ the Botlzmann constant, $T$ the temperature, and $\delta$ the Dirac function).
 
@@ -38,7 +38,9 @@ This example shows how to:
 
 3. Compute the trajectories of particles submitted to a sinusoidal forcing
 
-4. Compute the trajectories of particles held in an optical trap and submitted to a colored noise
+4. Compute the trajectories of particles held in an optical trap with a time-dependent trap stiffness
+
+5. Compute the trajectories of particles held in an optical trap and submitted to a colored noise
 
 *Note* : you can open this example with [Binder](https://mybinder.org/) to directly run it and interact with it in your internet browser: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aberut/BrownianSimulation1D/HEAD?labpath=Examples.ipynb)
 
@@ -52,7 +54,7 @@ The complete code is provided as a [Jupyter Notebook](./arXiv-2212.06825.ipynb).
 
 If you would like to use this code in a scientific work, please cite as:  
 
-> Antoine Bérut. aberut/BrownianSimulation1D: v1.5. (2023) [doi:10.5281/zenodo.7526269](https://doi.org/10.5281/zenodo.7526269)
+> Antoine Bérut. aberut/BrownianSimulation1D: v1.9. (2023) [doi:10.5281/zenodo.7526269](https://doi.org/10.5281/zenodo.7526269)
 
 # License
 
